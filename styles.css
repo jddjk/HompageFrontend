@@ -203,3 +203,35 @@ body.dark-mode #navigation ul li a {
         display: none;
     }
 }
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: calc(100vh - 200px);
+}
+
+input[type="submit"], button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:active, button:active {
+    background-color: #003367;
+}
