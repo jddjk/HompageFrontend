@@ -31,4 +31,21 @@ document.addEventListener('DOMContentLoaded', function () {
             document.documentElement.style.setProperty('--light-color', 'skyblue');
         }
     }
+
+    const addPostButton = document.getElementById('add-post-button');
+    if (addPostButton) {
+        addPostButton.addEventListener('click', addPost);
+    }
+
+    function addPost() {
+        const postTitle = prompt('글 제목을 입력해주세요');
+        const postContent = prompt('글 내용을 입력해주세요');
+
+        if (postTitle && postContent) {
+            const postList = document.getElementById('post-list');
+            const newPost = document.createElement('div');
+            newPost.innerHTML = `<h2>${postTitle}</h2><p>${postContent}</p>`;
+            postList.appendChild(newPost);
+        }
+    }
 });
