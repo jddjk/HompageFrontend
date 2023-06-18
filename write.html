@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>write - Jaehyeon Lee's Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="write.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div class="switch">
+            <input type="checkbox" id="mode-switcher">
+            <label for="mode-switcher" class="slider"></label>
+        </div>
+        <header><a href="index.html">Jaehyeon Lee's Webpage</a></header>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Programming.html">Programming</a></li>
+                <li><a href="Philosophy.html">Philosophy</a></li>
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="Private.html">Private</a></li>
+                <li><a href="Anything.html">Anything</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <form id="write-form">
+                <label for="title">제목:</label>
+                <input type="text" id="title" required>
+                <label for="content">내용:</label>
+                <textarea id="content" required></textarea>
+                <input type="submit" value="글 작성">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
